@@ -1,0 +1,90 @@
+.dropdown {
+    cursor: pointer;
+}
+.not-allowed {
+    cursor: not-allowed;
+}
+.dropdown .badge {
+    background-color: #777;
+    margin-right: 2px;
+}
+.dropdown .dropdown-menu, .dropdown button {
+    width: 100%;
+}
+#dropdownMenu > .caret {
+    margin-top: 8px;
+    margin-right: -6px;
+}
+.dropdown-menu div {
+    width: 93%;
+    z-index: 1;
+}
+.dropdown-static {
+    position: absolute;
+    list-style-type: none;
+    background-color: white;
+    width: 100%;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #e5e5e5;
+}
+.dropdown-scrollable {
+    list-style-type: none;
+    padding: 0px 0px 0px;
+    margin-top: 65px;
+    overflow-y: auto;
+}
+.hasfilter {
+    margin-top: 100px;
+}
+.dropdown-height {
+    max-height: 300px;
+}
+.dropdown-menu .dropdown-static > li > a, .dropdown-menu .dropdown-scrollable > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    text-decoration: none;
+}
+.dropdown-menu li a:hover {
+    color: #333;
+    background-color: #F9F2F4;
+}
+.dropdown-show {
+    display: block;
+}
+
+/* for bootstrap icons only */
+
+.glyphicon {
+    position: static;
+}
+
+/* filter search */
+
+.filter-parent {
+    position: relative;
+    font-size: 18px;
+    padding-top: 0px;
+    margin: 3px auto 0px;
+}
+.filter-parent label {
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    color: #C3BFBF;
+}
+.filter-parent > div {
+    width: 100%;
+}
+.filter-parent #filter-by {
+    padding: 6px 26px;
+    border-radius: 23px;
+    height: 30px;
+}

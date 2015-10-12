@@ -1,0 +1,21 @@
+extends partials/_layout
+
+append css
+  link(rel='stylesheet', type='text/css', href="/lib/bootstrap/dist/css/bootstrap.css")
+  link(rel='stylesheet', type='text/css', href="/lib/bootstrap/dist/css/bootstrap-theme.css")
+  link(rel='stylesheet', type='text/css', href="/src/angular-dropdownMultiselect.css")
+  link(rel='stylesheet', type='text/css', href="/css/demo.css")
+append js
+  script(src="/lib/angular/angular.js")
+  script(src="/src/angular-dropdownMultiselect.js")
+  script(src="/js/demo.js")
+
+block content
+  include partials/_nav
+  .container
+    br
+    .row
+      .col-sm-8.col-sm-offset-2
+        p.lead Using Config:
+        <dropdown-multiselect dropdown-config="mn.config" ></dropdown-multiselect>
+        p Selected Items = {{mn.selectedItems | json}}
