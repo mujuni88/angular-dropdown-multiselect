@@ -3,6 +3,7 @@ Angular JS directive for dropdown with multi-select feature.
 
 #How to run demo
     npm install
+    bower install
     npm start
 
 #Submitting for Distribution
