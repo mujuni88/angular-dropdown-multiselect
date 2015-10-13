@@ -7,3 +7,4 @@ public/lib
 coverage/
 .bower-*/
 .idea/
+demo/lib/*
