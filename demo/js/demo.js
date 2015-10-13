@@ -3,8 +3,8 @@
     angular.module('App', ['dropdown-multiselect']).controller('MainCtrl', MainCtrl);
 
     function MainCtrl() {
-        var vm = this,
-            options = [{
+        var vm = this;
+        vm.options = [{
                 'Id': 1,
                 'Name': 'Batman',
                 'Costume': 'Black'
@@ -17,15 +17,16 @@
                 'Name': 'Hulk',
                 'Costume': 'Green'
             }];
+
         vm.config = {
-            options: options,
+            options: vm.options,
             trackBy: 'Id',
             displayBy: ['Name', 'Costume'],
             divider: ':',
             icon: 'glyphicon glyphicon-heart',
             displayBadge: true,
-            height: '200px',
-            filter: true
+            filter: true,
+            height:'200px'
         };
     }
 }).call(this);

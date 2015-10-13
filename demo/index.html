@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="App">
+<html lang="en" ng-app="App" ng-controller="MainCtrl">
   <head>
     <title>Dropdown Multiselect Demo</title>
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.css">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/src/angular-dropdownMultiselect.css">
     <link rel="stylesheet" type="text/css" href="/css/demo.css">
   </head>
-  <body ng-controller="MainCtrl">
+  <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -20,14 +20,16 @@
         </div>
       </div>
     </nav>
-    <div class="container"><br>
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <p class="lead">Using Config:</p><dropdown-multiselect dropdown-config="mn.config" ></dropdown-multiselect>
-          <p>Selected Items = {{mn.selectedItems | json}}</p>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <p class="lead">Using Config:</p><dropdown-multiselect dropdown-config="mn.config" dropdown-options="mn.options"  model="mn.selectedItems"></dropdown-multiselect>
+            <p>Selected Items = {{mn.selectedItems | json}}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <script src="/lib/angular/angular.js"></script>
     <script src="/src/angular-dropdownMultiselect.js"></script>
     <script src="/js/demo.js"></script>

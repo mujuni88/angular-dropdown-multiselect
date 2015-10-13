@@ -8,6 +8,3 @@ Angular JS directive for dropdown with multi-select feature.
 
 #Submitting for Distribution
     npm run dist
-
-
-
